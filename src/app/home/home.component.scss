@@ -1,0 +1,19 @@
+@import '../../styles/_palette';
+:host {
+  display: block;
+  background: whitesmoke;
+}
+
+.grid-list-container {
+  padding: 16px;
+}
+
+
+mat-tab-group {
+  background: mat-color($ngs-background, card);
+}
+
+ngs-product-tile {
+  cursor: pointer;
+}
+

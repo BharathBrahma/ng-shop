@@ -1,0 +1,16 @@
+@import '../styles/palette';
+//  @debug $ngs-background;  // to see the colors during the scss compilation
+mat-toolbar {
+  background: mat-color($ngs-background, card); // card's background is white
+  // Add the shadow border at the bottom of the toolbar.
+  box-shadow: 0 1px mat-color($ngs-foreground, divider);
+}
+
+.fill {
+  flex: 1 1 auto;
+}
+
+.logo {
+  height: 36px;
+  width: auto;
+}

@@ -1,3 +1,4 @@
+import { ShoppingCartService } from './shared/services/shopping-cart.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-shop';
+  constructor(private shoppingCartService: ShoppingCartService) { } 
+  get cartTotalQuantity(): number {
+    return this.shoppingCartService.totalQuantity || null;
+  }
 }
